@@ -1,0 +1,30 @@
+/* Item Details Styles */
+.row h3 {
+    color: #007bff;
+}
+
+.row img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.row h2 {
+    color: #007bff;
+    margin-top: 20px;
+}
+
+.row p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar form {
+        margin-right: 0;
+    }
+    .navbar a {
+        margin: 0 10px;
+    }
+}

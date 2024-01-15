@@ -1,0 +1,71 @@
+/* Add these styles to your existing CSS file or create a new one */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55;
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+.login-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+#login-username,
+#login-password {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.button-container {
+    text-align: center;
+}
+
+#login-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#login-button:hover {
+    background-color: #0056b3;
+}
+
+#signup-link {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#signup-link:hover {
+    color: #0056b3;
+}

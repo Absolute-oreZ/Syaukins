@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    padding: 0;
+}
+
+header {
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    padding: 1rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.navbar-brand img {
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar a {
+    color: #343a40;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.navbar form {
+    max-width: 400px;
+}
+
+.navbar img.profile-image {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.footer {
+    margin-top: auto;
+    background-color: #efe5f3;
+    padding: 20px 0;
+    color: #495057;
+}
+
+.footer-icons {
+    font-size: 24px;
+    color: #495057;
+    margin-right: 10px;
+}
+
+/* Remove underline and change color for email */
+a[href^="mailto:"] {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Add hover effect for clickable elements */
+a,
+button {
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.footer a:hover,
+.footer button:hover {
+    color: #5f5cba;
+    text-decoration: underline;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.top-header {
+    background-color: #f8f9fa;
+    padding: 10px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Styling language selection in top-header */
+.top-header select {
+    width: auto;
+    margin-right: 20px;
+}
+
+/* Styling sign-in and sign-up in top-header */
+.top-header a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+    /* Adding transition effect */
+}
+
+/* Change color on hover for sign-in and sign-up */
+.top-header a:hover {
+    color: #ffc107;
+    /* Yellow color on hover */
+}

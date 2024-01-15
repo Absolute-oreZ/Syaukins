@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Dashboard - Syaukin's</title>
+    <link rel="icon" href="assets/logo/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Datepicker CSS (example using Bootstrap Datepicker) -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+        integrity="sha512-dZ6gCsgyIc0LhA/kKYG7PW6Mgc7hckHKo2K3TIQsiCeQdCp9MlIPOr4iKjoV1SUJM5deBl9Y2W9vFBLuQdA5lw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" href="assets/CSS/general.css">
+
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit&key=AIzaSyCJ-vTC9QBlWQoxmo7W1255Bly8QhrFp0Q"></script>
+</head>
+
+<body>
+    <div class="top-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6"> <!-- Language Selection -->
+                    <div id="google_translate_element"></div>
+                </div>
+                <div class="col-md-6 text-end"> <!-- Sign In / Sign Up Links -->
+                    <a href="singin.html" class="mx-2">Sign In</a>
+                    <span>|</span>
+                    <a href="signup.html">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <!-- Search Navbar -->
+        <nav class="navbar">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a href="index.html" class="navbar-brand">
+                    <img src="assets/logo/favicon 48x48.png" alt="Logo">
+                </a>
+
+                <!-- Navigation Links -->
+                <div class="nav-links">
+                    <a href="seller_dashboard.html">
+                        <span class="me-2">I WANT TO SELL</span>
+                    </a>
+                    <a href="feedback.html">
+                        <span>FEEDBACK</span>
+                    </a>
+                </div>
+
+                <!-- Search Bar and Profile Image -->
+                <div class="ms-auto d-flex align-items-center">
+                    <!-- Search Bar -->
+                    <form class="d-flex mb-2 mb-sm-0" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+
+                    <!-- Profile Image -->
+                    <a href="profile_setting.html" class="ms-3">
+                        <img src="assets/images/Profile.png" class="profile-image" alt="Profile Image">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-5">
+        <h2 class="mb-4">Seller Dashboard - Add Item</h2>
+
+        <form id="sellerForm">
+            <div class="mb-3">
+                <label for="itemName" class="form-label">Item Name</label>
+                <input type="text" class="form-control" id="itemName" name="itemName" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="itemDescription" class="form-label">Item Description</label>
+                <textarea class="form-control" id="itemDescription" name="itemDescription" rows="3" required></textarea>
+            </div>
+
+            <div class="mb-3">
+                <div class="form-group">
+                    <label for="starting_bid">Starting Bid</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">RM</span>
+                        </div>
+                        <input type="number" class="form-control" id="starting_bid" name="starting_bid"
+                            placeholder="Starting Bid" min="10" step="10" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="startDate" class="form-label">Bidding Start Date</label>
+                <input type="text" class="form-control datepicker" id="startDate" name="startDate" autocomplete="off"
+                    required>
+            </div>
+
+            <div class="mb-3">
+                <label for="endDate" class="form-label">Bidding End Date</label>
+                <input type="text" class="form-control datepicker" id="endDate" name="endDate" autocomplete="off"
+                    required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <footer class="footer mt-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Contact Us</h5>
+                    <a href="mailto:syaukins@gmail.com?">Syaukins'gmail.com</a>
+                </div>
+                <div class="col-md-6">
+                    <h5>Follow Us</h5>
+                    <!-- Bootstrap Icons for Social Media -->
+                    <a href="#" target="_blank" class="footer-icons"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank" class="footer-icons"><i class="fab fa-facebook"></i></a>
+                    <a href="#" target="_blank" class="footer-icons"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank" class="footer-icons"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <hr>
+            <p>&copy; 2024 Syaukins'. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- Datepicker JS (example using Bootstrap Datepicker) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"
+        integrity="sha512-XZzg0WPssFnX5THnRfGJnXdz2IgsD4MS7qaznhjv8httiN7EQDts8Vtj4qaYvm2QoG5JztpO2o5CqFw6Ztv7FA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Your Custom JavaScript -->
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Initialize translation element when the page is loaded
+            googleTranslateElementInit();
+
+            // Set up event listener for language selection
+            document.getElementById('languageSelector').addEventListener('change', function () {
+                var selectedLanguage = this.value;
+                var translateElement = new google.translate.TranslateElement({ pageLanguage: selectedLanguage }, 'google_translate_element');
+                translateElement.select(selectedLanguage);
+
+                // Automatically trigger translation after setting the language
+                translateElement.translate(selectedLanguage);
+            });
+        });
+
+        $(document).ready(function () {
+            $('.datepicker').datepicker({
+                format: 'yyyy-mm-dd',
+                autoclose: true
+            });
+
+            document.getElementById('sellerForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                // Prompt the user
+                var isConfirmed = window.confirm('Are you sure you want to submit the form?');
+
+                // If the user confirms, redirect to the homepage
+                if (isConfirmed) {
+                    window.location.href = 'index.html'; // Replace 'index.html' with your actual homepage URL
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+.feedback-container {
+    min-height: 45vh;
+    text-align: center;
+    padding: 40px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-heading {
+    font-size: 28px;
+    color: #007bff;
+}
+
+.rating {
+    font-size: 32px;
+    margin: 20px 0;
+}
+
+.rating i {
+    color: #ffc107;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.rating i:hover {
+    color: #ffac33;
+}
+
+.rate-us-text {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+#feedbackInput {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+#submitFeedback {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submitFeedback:hover {
+    background-color: #0056b3;
+}
