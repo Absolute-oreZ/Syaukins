@@ -8,7 +8,7 @@ function validatePassword(buttonType) {
             return false;
         } else {
             // Password meets criteria, redirect to another page
-            window.location.href = "signin.html";
+            window.location.href = "index.html";
             return false; // Prevent the form from being submitted
         }
     }

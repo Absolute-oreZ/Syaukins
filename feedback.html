@@ -6,54 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Syaukin's</title>
     <link rel="icon" href="assets/logo/favicon.ico" type="image/x-icon">
-  
-    <!-- Bootstrap CSS -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  
-    <!-- Custom CSS -->
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <link rel="stylesheet" href="assets/CSS/general.css">
     <link rel="stylesheet" href="assets/CSS/feedback_style.css">
-    <!-- Font Awesome for icons-->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <script type="text/javascript"
-      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-  
-  
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
     <script type="text/javascript"
-      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit&key=AIzaSyCJ-vTC9QBlWQoxmo7W1255Bly8QhrFp0Q"></script>
-  
-  </head>
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit&key=AIzaSyCJ-vTC9QBlWQoxmo7W1255Bly8QhrFp0Q"></script>
+
+</head>
 
 <body>
     <div class="top-header">
         <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-6"> <!-- Language Selection -->
-              <div id="google_translate_element"></div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div id="google_translate_element"></div>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="singin.html" class="mx-2">Sign In</a>
+                    <span>|</span>
+                    <a href="signup.html">Sign Up</a>
+                </div>
             </div>
-            <div class="col-md-6 text-end"> <!-- Sign In / Sign Up Links -->
-              <a href="singin.html" class="mx-2">Sign In</a>
-              <span>|</span>
-              <a href="signup.html">Sign Up</a>
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
 
     <header>
-        <!-- Search Navbar -->
         <nav class="navbar">
             <div class="container-fluid">
-                <!-- Logo -->
                 <a href="index.html" class="navbar-brand">
                     <img src="assets/logo/favicon 48x48.png" alt="Logo">
                 </a>
-
-                <!-- Navigation Links -->
                 <div class="nav-links">
                     <a href="seller_dashboard.html">
                         <span class="me-2">I WANT TO SELL</span>
@@ -62,16 +55,11 @@
                         <span>FEEDBACK</span>
                     </a>
                 </div>
-
-                <!-- Search Bar and Profile Image -->
                 <div class="ms-auto d-flex align-items-center">
-                    <!-- Search Bar -->
                     <form class="d-flex mb-2 mb-sm-0" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
-
-                    <!-- Profile Image -->
                     <a href="profile_setting.html" class="ms-3">
                         <img src="assets/images/Profile.png" class="profile-image" alt="Profile Image">
                     </a>
@@ -82,18 +70,9 @@
 
     <div class="feedback-container">
         <h2 class="feedback-heading">GIVE US YOUR FEEDBACK!</h2>
-
-        <!-- Star Rating -->
-        <div class="rating" id="starRating">
-            <!-- Stars will be dynamically added with JavaScript -->
-        </div>
-
+        <div class="rating" id="starRating"></div>
         <p class="rate-us-text"><b>RATE US</b></p>
-
-        <!-- Feedback Textarea -->
         <textarea id="feedbackInput" placeholder="e.g., The system is excellent" rows="4"></textarea>
-
-        <!-- Submit Button -->
         <button id="submitFeedback">Submit Feedback</button>
     </div>
 
@@ -106,7 +85,6 @@
                 </div>
                 <div class="col-md-6">
                     <h5>Follow Us</h5>
-                    <!-- Bootstrap Icons for Social Media -->
                     <a href="#" target="_blank" class="footer-icons"><i class="fab fa-instagram"></i></a>
                     <a href="#" target="_blank" class="footer-icons"><i class="fab fa-facebook"></i></a>
                     <a href="#" target="_blank" class="footer-icons"><i class="fab fa-linkedin"></i></a>
@@ -124,22 +102,17 @@
         }
     
         document.addEventListener('DOMContentLoaded', function () {
-          // Initialize translation element when the page is loaded
           googleTranslateElementInit();
     
-          // Set up event listener for language selection
           document.getElementById('languageSelector').addEventListener('change', function () {
             var selectedLanguage = this.value;
             var translateElement = new google.translate.TranslateElement({ pageLanguage: selectedLanguage }, 'google_translate_element');
             translateElement.select(selectedLanguage);
-    
-            // Automatically trigger translation after setting the language
             translateElement.translate(selectedLanguage);
           });
         });
       </script>
 
-    <!-- Linking Bootstrap JS and Popper.js -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
